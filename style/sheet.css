@@ -1,5 +1,12 @@
 /* Styling required to delight and marvel */
 
+:root {
+  --secondary: rgba(235, 33, 64, 1);
+  --tertiary: rgba(38, 24, 53, 1);
+
+  --field: rgba(46, 40, 76, 1);
+}
+
 body {
   margin: 0;
 }
@@ -12,7 +19,7 @@ body {
 
 #faq {
   background-color: whitesmoke;
-  border: .25rem solid black;
+  border: .25rem solid rgba(38, 24, 53, 1);
   margin: 0 auto;
   padding: 1rem;
   width: 37.5rem;
@@ -24,15 +31,29 @@ body {
   color: white;
   font-family: 'Six Caps', sans-serif;
   font-size: 3rem;
+  letter-spacing: .2rem;
   margin: .5rem 0;
   padding: 0 .5rem;
   text-transform: uppercase;
 }
 
 #faq h2 {
-  color: mediumpurple;
+  color: rgba(235, 33, 64, 1);
   font-size: 3rem;
+  position: relative;
   padding-left: 2rem;
+}
+
+#faq h2:before {
+  border-style: solid;
+  border-width: .625rem 0 .625rem 1rem;
+  border-color: transparent transparent transparent rgba(235, 33, 64, 1);
+  content: "";
+  height: 0;
+  left: .5rem;
+  position: absolute;
+  top: 1.25rem;
+  width: 0;
 }
 
 #faq p,
@@ -40,13 +61,31 @@ body {
   font-family: 'Archivo Narrow', sans-serif;
 }
 
+#faq strong {
+  background-color: rgba(235, 33, 64, 1);
+  color: white;
+  display: inline-block;
+  padding: .125rem .25rem;
+}
+
 #faq a {
-  color: rgba(46, 40, 76, 1);
+  background-color: rgba(46, 40, 76, 1);
+  color: white;
+  display: inline-block;
+  padding: .125rem .25rem;
+  text-decoration: none;
 }
 
 #faq ul {
   list-style-position: inside;
   padding: 0;
+}
+
+#faq .map a {
+  background-color: transparent;
+  color: rgba(46, 40, 76, 1);
+  padding: 0;
+  width: 100%;
 }
 
 #faq figure {
@@ -56,5 +95,9 @@ body {
 }
 
 #faq figure img {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 5rem;
+  width: 100%;
   max-width: 100%;
 }
