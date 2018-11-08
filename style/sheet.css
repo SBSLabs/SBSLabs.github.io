@@ -1,7 +1,60 @@
 /* Styling required to delight and marvel */
 
+body {
+  margin: 0;
+}
+
 #hero {
   background-color: rgba(46, 40, 76, 1);
   opacity: 1;
   padding: 1rem;
+}
+
+#faq {
+  background-color: whitesmoke;
+  border: .25rem solid black;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 37.5rem;
+}
+
+#faq h1,
+#faq h2 {
+  background-color: rgba(46, 40, 76, 1);
+  color: white;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 3rem;
+  margin: .5rem 0;
+  padding: 0 .5rem;
+  text-transform: uppercase;
+}
+
+#faq h2 {
+  color: mediumpurple;
+  font-size: 3rem;
+  padding-left: 2rem;
+}
+
+#faq p,
+#faq li {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+#faq a {
+  color: rgba(46, 40, 76, 1);
+}
+
+#faq ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+#faq figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#faq figure img {
+  max-width: 100%;
 }
