@@ -19,22 +19,42 @@
 } */
 
 body {
+  background-color: rgba(46, 40, 76, 1);
   margin: 0;
 }
 
-#hero {
-  background: rgba(35, 34, 71, 1);
-  background: linear-gradient(0deg, rgba(241, 95, 66, 1) 0%, rgba(35, 34, 71, 1) 100%);
+#wikiPageControl_cntrl_6_panelContent {
+  background-color: rgba(46, 40, 76, 1);
+}
+
+#poster {
   opacity: 1;
   padding: 1rem;
 }
 
-#hero-clouds {
-  background: transparent url(../graphics/poster_clouds.png) no-repeat 50% 100%;
-  height: 100%;
+#hero {
+  opacity: 1;
+  padding: 1rem;
+}
+
+#hero-fade {
+  background: rgba(35, 34, 71, 1);
+  background: linear-gradient(0deg, rgba(241, 95, 66, 1) 0%, rgba(35, 34, 71, 1) 100%);
+  background-attachment: fixed;
+  height: 62.5rem;
   left: 0;
   position: fixed;
-  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+#hero-clouds {
+  background: transparent url(../graphics/poster_clouds.png) no-repeat 50% 100%;
+  height: 62.5rem;
+  left: 0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   z-index: 0;
 }
@@ -42,18 +62,45 @@ body {
 #hero-scape {
   background: transparent url(../graphics/poster_scape.png) no-repeat 50% 100%;
   bottom: -5rem;
-  height: 100%;
+  height: 23.75rem;
   left: 0;
   position: fixed;
   width: 100%;
   z-index: 10
 }
 
-#faq {
+#care {
   background-color: whitesmoke;
   border: .25rem solid rgba(38, 24, 53, 1);
   margin: 0 auto 8.5rem;
   padding: 1rem 1rem 3.5rem;
+  position: relative;
+  width: 37.5rem;
+  z-index: 10
+}
+
+#care h1 {
+  background-color: rgba(46, 40, 76, 1);
+  color: rgba(255, 213, 3, 1);
+  font-family: 'Stint Ultra Condensed', serif;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  line-height: 1;
+  margin: .5rem 0;
+  padding: .5rem 1.5rem;
+  text-transform: uppercase;
+}
+
+#care p {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.5rem;
+}
+
+#faq {
+  background-color: whitesmoke;
+  border: .25rem solid rgba(38, 24, 53, 1);
+  margin: 0 auto 1rem;
+  padding: 1rem 1rem .5rem;
   position: relative;
   width: 37.5rem;
   z-index: 10
@@ -92,9 +139,16 @@ body {
 }
 
 #faq p,
-#faq li {
+#faq ul,
+#faq dl {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 1.5rem;
+}
+
+#faq b {
+  background-color: rgba(255, 213, 3, 1);
+  display: inline-block;
+  padding: .125rem .25rem;
 }
 
 #faq strong {
