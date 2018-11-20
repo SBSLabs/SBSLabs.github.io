@@ -35,11 +35,13 @@ body {
 #poster {
   opacity: 1;
   padding: 1rem;
+  position: relative;
 }
 
 #hero {
   opacity: 1;
   padding: 1rem;
+  position: relative;
 }
 
 #hero-fade {
