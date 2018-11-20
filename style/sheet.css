@@ -23,6 +23,10 @@ body {
   margin: 0;
 }
 
+#wikiPageControl_cntrl_6_panelHeader {
+  background-color: transparent;
+}
+
 #wikiPageControl_cntrl_6_panelContent {
   background-color: rgba(46, 40, 76, 1);
 }
@@ -108,7 +112,7 @@ body {
   margin: 0 auto 1rem;
   padding: 1rem 1rem .5rem;
   position: relative;
-  width: 37.5rem;
+  width: 35.5rem;
   z-index: 10
 }
 
@@ -170,6 +174,10 @@ body {
   display: inline-block;
   padding: .125rem .25rem;
   text-decoration: none;
+}
+
+#faq .social {
+  margin-bottom: .25rem;
 }
 
 #faq ul {
