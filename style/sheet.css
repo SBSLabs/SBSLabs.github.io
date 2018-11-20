@@ -28,6 +28,7 @@ body {
 }
 
 #content {
+  background: rgba(35, 34, 71, 1);
   position: relative;
 }
 
@@ -42,7 +43,6 @@ body {
 }
 
 #hero-fade {
-  background: rgba(35, 34, 71, 1);
   background: linear-gradient(0deg, rgba(241, 95, 66, 1) 0%, rgba(35, 34, 71, 1) 100%);
   background-attachment: fixed;
   height: 62.5rem;
